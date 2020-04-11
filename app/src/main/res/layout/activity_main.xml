@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="412dp"
+        android:layout_height="426dp"
+        android:src="@drawable/kkkk"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="324dp"
+
+        android:layout_height="74dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/averia_libre_light"
+        android:onClick="chatbotactivity"
+        android:text="Get Started"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="357dp"
+        android:layout_height="127dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Welcome to ChatBot"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#FFC107"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+        tools:text="Welcome to ChatBot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
